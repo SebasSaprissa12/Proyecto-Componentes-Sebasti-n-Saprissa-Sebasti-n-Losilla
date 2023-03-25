@@ -6,7 +6,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'clouddemo-service-account.json.j
 cliente = bigquery.Client()
 
 sql_query = """
-SELECT nombre, sexo, id 
+SELECT nombre, id, clasificacion, precio, fecha_de_salida, stock
 FROM `sanguine-orb-379207.Juegos.Games` LIMIT 1000
 """
 
