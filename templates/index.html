@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resultados de la consulta</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>ID</th>
+			<th>Clasificación</th>
+			<th>Precio</th>
+			<th>Fecha de salida</th>
+			<th>Stock</th>
+		</tr>
+		{% for row in rows %}
+		<tr>
+			<td>{{ row['nombre'] }}</td>
+			<td>{{ row['id'] }}</td>
+			<td>{{ row['clasificacion'] }}</td>
+			<td>{{ row['precio'] }}</td>
+			<td>{{ row['fecha_de_salida'] }}</td>
+			<td>{{ row['stock'] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
