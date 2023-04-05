@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'clouddemo-service-account.json.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'API/clouddemo-service-account.json.json'
 cliente = bigquery.Client()
 
 @app.route('/')
