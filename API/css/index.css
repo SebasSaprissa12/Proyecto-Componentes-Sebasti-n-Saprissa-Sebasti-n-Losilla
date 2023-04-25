@@ -1,0 +1,837 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #fff;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-family: 'Titillium Web';
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: unset;
+}
+
+
+
+
+.titulaje1 {
+    color: #91ff00;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.titulaje2 {
+    color: #ff5200;
+    font-weight: bolder;
+    /*font-size: 2.5rem;*/
+}
+
+.titulaje3 {
+    color: rgb(35, 149, 255);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.titulaje4 {
+    color: #59ff00;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.titulaje5 {
+    color: #ea00ff;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.titulaje6{
+    color: #8fff00;
+    font-weight: bolder;
+}
+
+.titulaje-formulario {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+
+.negrita {
+    font-weight: bolder;
+}
+
+.fondo1{
+    box-shadow: 5px 5px 99px #e3da04;
+    border-radius: 10px;
+    border-color: transparent
+}
+
+.fondo2{
+    box-shadow: 5px 5px 99px rgb(35, 149, 255);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.fondo3{
+    box-shadow: 5px 5px 99px #59ff00;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.fondo4{
+    box-shadow: 5px 5px 99px #ea00ff;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+
+/* Estilo menu hamburguesa */
+
+.ham{
+    border-color: #ff9203 !important;
+    background-color: #ffd901 !important;
+}
+
+/********************* ESTILOS BOTONES ******************************/
+
+.btnentrada {
+    cursor: pointer;
+    background-color: #928372;
+    width: 200px;
+    height: 60px;
+    border: 3px solid #e4e4e4;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 15px 50px;
+    text-decoration: none;
+    transition: linear 0.5s;
+}
+
+.btnentrada:hover {
+    width: 200px;
+    height: 60px;
+    background-color: #e4e4e4;
+    color: #000;
+    border: 3px solid #0b3e64;
+    text-decoration: none;
+    padding: 15px 50px;
+    font-size: 2.2rem;
+    transition: linear 0.5s;
+}
+
+.goto-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 50px;
+}
+
+
+label {
+    font-size: 24px;
+    color: #6e0d0d;
+    font-weight: bolder;
+}
+
+
+/*********************  ENCABEZADO BANNER WEB INICIAL ******************************/
+
+/* Fondo del banner home */
+
+.banner-section{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(100vh);
+    background-position: center;
+    background-image: url('../imagenes/fondo.jpg');
+    background-color: #959595;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+
+.fondoBanner {
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    background-position: center;
+    background-image: url('../imagenes/fondoMenu.png');
+    background-color: #ff8700;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 65%);
+}
+
+.banner-section2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(100vh);
+    background-position: center;
+    background-image: url('../imagenes/GPU.jpg');
+    background-color: #928372;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.banner-section3 {
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    background-position: center;
+    background-image: url('../imagenes/fondotexto.jpg');
+    background-color: #ff8700;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 17%);
+}
+
+.espacio {
+    padding: 59px 0;
+}
+
+.linea {
+    margin: 5rem 0;
+    color: #00ff37;
+    height: 4px !important;
+}
+
+.bannerparallax {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(30vh);
+    background-image: url('../imagenes/bannerparallax.png');
+    background-color: #ff8700;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.17);
+}
+
+
+/*********************  PIE DE PAGINA ******************************/
+
+footer {
+    background-color: #000;
+}
+
+footer h3 {
+    color: #a5204d;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+
+footer .copyright {
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.espacio2{
+    display: inline-block;
+    margin:0px 15px 0px 15px;
+    padding: 120px 0;
+  }
+
+  .fondo-footer {
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    background-position: center;
+    background-image: url('../imagenes/fondotexto.jpg');
+    background-color: #ff8700;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 60%);
+}
+
+/*formulario*/
+.carru{
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-attachment: fixed;
+        background-size: cover;
+        /*control altura del banner*/
+        height: calc(100vh);
+        background-position: center;
+        background-image: url('../imagenes/fondoMenu.png');
+        background-color: #928372;
+        background-blend-mode: multiply;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    
+}
+
+
+/*etiquetas*/
+
+label {
+    color: #000;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+}
+
+/* Para agregar un borde cuando se activan los campos de los botones del formulario */
+
+input:hover {
+    outline: 3px solid #ff9b00;
+}
+
+textarea:hover {
+    outline: 3px solid #ff9b00;
+}
+
+
+/* Propiedades de los 2 botones del formulario */
+
+.enviar {
+    width: 170px;
+    height: 60px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #ff9b00;
+    background-color: #8AC53F !important;
+    border-radius: 12px;
+}
+
+.borrar {
+    width: 170px;
+    height: 60px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #ff9b00;
+    background-color: #8AC53F !important;
+    border-radius: 12px;
+}
+
+/* Validación campo TextArea */
+
+textarea {
+    resize: none;
+}
+
+
+/* Registro */
+
+.form-register {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    background-color: #000;
+    
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #cf0d0d;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #b51313;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  .formulario{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('../imagenes/footer.jpg');
+    background-color: #7f2aa5;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.17);
+  }
+
+  .fondoInfo{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('../imagenes/fondotexto.jpg');
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.17);
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  /* Propiedades de la barra de navegación */
+
+  .barra{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+
+  .color{
+    background-color: #8AC53F;
+    box-shadow: 5px 5px 8px #ff8100;
+  }
+
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.navbar-brand{
+    margin-right: 0;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* Propiedades del menu hamburguesa */
+
+.navbar-toggler {
+    background-color: #d6dbe3;
+    border: 3px solid #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #d6dbe3;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #fff;
+}
+
+/* lineas */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }  
+
+
+
+/*Propiedades del logo */
+
+.logo img {
+    margin-left: 8px;
+    height: 72px;
+}
+
+
+/* Scrolltop */
+
+.goto-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 75px;
+    height: 50px;
+}
+
+/* Efecto hover a las imagenes sección servicios */
+
+.efecto1{
+    transition: all ease-in-out 0.4s;
+}
+
+.efecto1:hover{
+    transform: scale(1.4);
+}
+
+
+/* animacion de iconos de redes sociales*/
+
+div.animacion1:hover i::before {
+    transition: all 1s ease-in-out;
+    color:#8AC53F;
+  }
+
+
+  /* Color iconografía */
+
+  .icolor1{
+    background-color: #7f2aa5 !important;
+  }
+
+
+  /* Tarjetas */
+
+  .card{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 18rem !important;
+    background-color: #131116;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+
+  .categoria{
+    background-color: #db2d2d;
+  }
+
+
+  .container-fluid1 {
+    padding-bottom: 80px;
+}
+
+/* CAROUSEL */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 70px;
+    height: 70px;
+    /*background-color: #e4e4e4;*/
+}
+
+
+/*color de flechas*/
+/*por defecto el icono tiene color blanco*/
+/*cambiar la propiedad fill por # hexadecimal*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* video */
+.video {
+    width: 100%;
+  }
+
+  .content {
+    z-index: 2;
+  }
+
+  .video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:13px;
+    left:8px;
+    background-color:#25d366;
+    color:#fff;
+    border-radius:50%;
+    /*posicion en linea del icono*/
+    line-height: 20px;
+    /*tamaño del icono*/
+    font-size:60px;
+    text-decoration: none;
+    transition: all 1s ease-in;
+    z-index: 1;
+  }
+  
+  div .whatsapp:hover {
+    background-color:rgb(255, 123, 0) !important;
+  }
+
+/********************* MEDIAS QUERYS ******************************/
+
+/* Galaxy Fold en adelante */
+
+@media (min-width: 280px) and (max-width: 359px){
+
+    h1{
+       font-size: 25px; 
+    }
+
+    h2{
+        font-size: 22.2px !important;
+        text-align: center;
+    }
+
+    p{
+        font-size: 11px;
+        text-align: justify;
+    }
+
+    .titulo{
+        padding-top: 4rem  ;
+    }
+
+    .bannertxt{
+        padding-top: 1rem!important;
+    }
+
+    .simbolo{
+        font-size: 3em;
+    }
+
+    .centrar{
+        padding-right: 0px;
+    }
+
+    .ancho{
+        width: 291px;
+    }
+
+    .padding{
+        padding-left: 1px;
+    }
+
+    .form-register{
+        width: 256px;
+    }
+
+    .logo img {
+        height: 69px;
+    }
+
+    .card{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 13rem !important;
+      }
+
+      figcaption p {
+        font-size: 10px !important;
+      }
+
+      figcaption h3 {
+        font-size: 16px;
+      }
+
+}
+
+/*dispositivos pequeños*/
+
+@media (min-width: 360px) and (max-width: 414px){
+
+    h1{
+       font-size: 26px; 
+    }
+
+    h2{
+        font-size: 22.2px !important;
+        text-align: center;
+    }
+
+    p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .titulo{
+        padding-top: 4rem  ;
+    }
+
+    .bannertxt{
+        padding-top: 1rem!important;
+    }
+
+    .simbolo{
+        font-size: 3em;
+    }
+
+    .centrar{
+        padding-right: 0px;
+    }
+
+
+    .form-register{
+        width: 344px;
+    }
+
+    figcaption p {
+        font-size: 14px !important;
+      }
+
+      figcaption h3 {
+        font-size: 23px;
+      }
+
+}
+
+/*Tabletas y celulares grandes*/
+@media (min-width: 415px){
+
+    .caja{
+        height: 450px;
+        padding-top: 7rem !important;
+    }
+
+    .bannertxt{
+        padding-top: 1rem !important;
+        font-size: 17px;
+
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    
+    figcaption p {
+        font-size: 15px !important;
+        font-weight: bolder;
+      }
+
+      figcaption h3 {
+        font-size: 19px;
+      }
+
+
+
+
+}
+/*Tabletas y celulares grandes*/
+@media (min-width: 576px) and (max-width: 767px){
+
+    .bannertxt{
+        padding-top: 1rem !important;
+        font-size: 17px;
+
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    
+    figcaption p {
+        font-size: 14px;
+      }
+
+      figcaption h3 {
+        font-size: 19px;
+      }
+
+      h3 {
+        font-size: 26px;
+      }
+      
+      p{
+        font-size: 16px;
+      }
+
+      .col-sm-4 {
+        width: 100%;
+      }
+
+}
+
+/*Para computadoras de escritorio */
+@media (min-width: 992px) and (max-width: 1200px){
+
+    .caja{
+        height: 445px;
+        padding-top: 7rem !important;
+    }
+
+    .bannertxt{
+        padding-top: 1rem !important;
+        font-size: 21px;
+
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .card{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 18rem !important;
+      }
+
+}
+
+
+
+
+

@@ -1,0 +1,126 @@
+body {
+    font-family: "Poppins", Arial sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8AC53F;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;    
+}
+
+
+/*desactivar viñetas de la lista*/
+ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/************ TABLA DE PRECIOS ***************/
+
+.price-table {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #8AC53F;
+    border: 2px solid #fff;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+/* el margin negativo -40px es para que haga el efecto que sube el cuadro */
+/* el margin positivo 40px es para que haga el efecto que baje el cuadro */
+/* el color verde es el principal de la tabla de precios */
+
+.price-table:hover {
+    background-color: #ff8100;
+    margin-top: -40px;
+    z-index: 10;
+    border: none;
+}
+
+/* clases de los textos precios y dolar*/
+
+div.price{
+    font-size: 60px;
+    font-weight: 300;
+    color:#fff;
+}
+
+div.dollar{
+    vertical-align: top;
+    font-size: 17px !important;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* clases de los textos listas */
+
+.price-table ul.features {
+    margin-top: 10px;
+}
+
+.price-table ul.features li {
+    font-size: 16px;
+    line-height: 37px;
+}
+
+/* al pasar el mouse en la info cambia a color blanco los textos ya que al inicio son negros */
+
+.price-table:hover * {
+    color: #fff !important;
+}
+
+
+/**************** MEDIA QUERIES ******************/
+
+
+/*
+@media(max-width: 768px) {
+    .price-table {
+        padding-bottom: 50px;
+    }
+}
+*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    .price-table {
+        padding-bottom: 50px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .price-table {}
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .price-table {}
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {}
