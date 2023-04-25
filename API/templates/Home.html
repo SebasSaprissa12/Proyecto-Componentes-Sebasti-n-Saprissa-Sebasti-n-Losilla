@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resultados de la consulta</title>
+	<style>
+		/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+h1 {
+	color: white
+}
+
+p{
+	color: white;
+}
+
+label{
+	color: white;
+}
+
+/* Estilo para la tabla de resultados */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+	background-color: white;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Estilo para los formularios */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(201, 1, 1, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=number], input[type=datetime-local] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+	border: white;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilo para los encabezados */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+	</style>
+</head>
+<body>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>ID</th>
+				<th>Clasificación</th>
+				<th>Precio en $</th>
+				<th>Fecha de salida</th>
+				<th>Stock</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in rows %}
+			<tr>
+				<td>{{ row.nombre }}</td>
+				<td>{{ row.id }}</td>
+				<td>{{ row.clasificacion }}</td>
+				<td>{{ row.precio }}</td>
+				<td>{{ row.fecha_de_salida }}</td>
+				<td>{{ row.stock }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<h1 class="">Insertar juego</h1>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <form action="/insertar" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br>
+
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id"><br>
+
+      <label for="clasificacion">Clasificación:</label>
+      <input type="text" id="clasificacion" name="clasificacion"><br>
+
+      <label for="precio">Precio:</label>
+      <input type="text" id="precio" name="precio"><br>
+
+      <label for="fecha_de_salida">Fecha de salida:</label>
+      <input type="datetime-local" id="fecha_de_salida" name="fecha_de_salida"><br>
+
+      <label for="stock">Stock:</label>
+      <input type="text" id="stock" name="stock"><br>
+
+      <input type="submit" value="Insertar">
+    </form>
+
+	<h1>Eliminar Juego</h1>
+	<form action="/eliminar" method="POST">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id"><br>
+        <input type="submit" value="Eliminar">
+      </form>
+
+
+	  <h1>Actualizar Juego</h1>
+
+	  <form action="/actualizar" method="POST">
+		<input type="number" name="id" value="{{ id }}">
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" value="{{ nombre }}"><br><br>
+		<label for="clasificacion">Clasificación:</label>
+		<input type="text" name="clasificacion" value="{{ clasificacion }}"><br><br>
+		<label for="precio">Precio:</label>
+		<input type="text" name="precio" value="{{ precio }}"><br><br>
+		<label for="fecha_de_salida">Fecha de Salida:</label>
+		<input type="datetime-local" name="fecha_de_salida" value="{{ fecha_de_salida }}"><br><br>
+		<label for="stock">Stock:</label>
+		<input type="text" name="stock" value="{{ stock }}"><br><br>
+		<input type="submit" value="Actualizar">
+	</form>
+	  
+</body>
+</html>
